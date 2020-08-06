@@ -71,8 +71,8 @@
                             <constraint firstItem="bXx-Vt-aNG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9fO-qK-PQR"/>
                             <constraint firstItem="eOB-zb-SVI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BAa-mu-h29"/>
                             <constraint firstItem="bXx-Vt-aNG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="21" id="BF9-NO-YEy"/>
-                            <constraint firstItem="kdP-fo-qTg" firstAttribute="leading" secondItem="WUp-FO-LIC" secondAttribute="trailing" constant="104.33333333333331" id="Cyy-aP-6ON">
-                                <variation key="heightClass=compact-widthClass=compact" constant="80"/>
+                            <constraint firstItem="kdP-fo-qTg" firstAttribute="leading" secondItem="5kQ-Bq-fcR" secondAttribute="trailing" constant="104.33333333333331" id="Cyy-aP-6ON">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-2.3333333333333712"/>
                             </constraint>
                             <constraint firstItem="eOB-zb-SVI" firstAttribute="top" secondItem="5kQ-Bq-fcR" secondAttribute="bottom" constant="35.333333333333343" id="DRg-nC-Uwv">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
