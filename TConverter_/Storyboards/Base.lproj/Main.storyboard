@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Converter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConverterViewController" customModule="TConverter_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="bXx-Vt-aNG">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="818"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOB-zb-SVI">
-                                <rect key="frame" x="370.66666666666669" y="222.66666666666666" width="71" height="41.999999999999972"/>
+                                <rect key="frame" x="152" y="441" width="71" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-Bq-fcR">
-                                <rect key="frame" x="293" y="172.66666666666666" width="226" height="31"/>
+                                <rect key="frame" x="74.666666666666686" y="391" width="226" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="222" id="EBv-Ye-lBF"/>
                                     <constraint firstAttribute="width" constant="222" id="EmF-ap-3tW"/>
@@ -51,19 +53,20 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUp-FO-LIC">
-                                <rect key="frame" x="377.66666666666669" y="110.66666666666669" width="57" height="42"/>
+                                <rect key="frame" x="159" y="329" width="57" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kdP-fo-qTg">
-                                <rect key="frame" x="514.66666666666663" y="20" width="192.33333333333337" height="45"/>
+                                <rect key="frame" x="66.666666666666686" y="90" width="242" height="45"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bXx-Vt-aNG" secondAttribute="bottom" id="5TW-Z7-t4u"/>
                             <constraint firstItem="eOB-zb-SVI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5hh-Bc-qgb"/>
@@ -103,7 +106,6 @@
                             <constraint firstItem="kdP-fo-qTg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="weB-9h-6lx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdP-fo-qTg" secondAttribute="trailing" constant="61" id="ypr-vS-vst"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="DvK-sS-dcq"/>
@@ -116,23 +118,23 @@
                                 <exclude reference="dw8-hC-k3h"/>
                                 <exclude reference="gUw-qI-CZw"/>
                                 <exclude reference="vC9-hY-QOq"/>
-                                <exclude reference="Cyy-aP-6ON"/>
-                                <exclude reference="Nd9-hG-4QB"/>
-                                <exclude reference="ZU0-aV-nep"/>
-                                <exclude reference="qM0-J7-NYh"/>
-                                <exclude reference="weB-9h-6lx"/>
-                                <exclude reference="WFT-M6-8aj"/>
-                                <exclude reference="wbr-rj-F3T"/>
                                 <exclude reference="6zA-D3-85i"/>
                                 <exclude reference="GYZ-fw-Sut"/>
                                 <exclude reference="Jg9-3N-eIc"/>
                                 <exclude reference="ab2-Cn-xrW"/>
                                 <exclude reference="g0e-gj-Ixl"/>
                                 <exclude reference="nhG-K0-mFQ"/>
+                                <exclude reference="WFT-M6-8aj"/>
+                                <exclude reference="wbr-rj-F3T"/>
                                 <exclude reference="5hh-Bc-qgb"/>
                                 <exclude reference="BAa-mu-h29"/>
                                 <exclude reference="DRg-nC-Uwv"/>
                                 <exclude reference="w73-AM-2yy"/>
+                                <exclude reference="Cyy-aP-6ON"/>
+                                <exclude reference="Nd9-hG-4QB"/>
+                                <exclude reference="ZU0-aV-nep"/>
+                                <exclude reference="qM0-J7-NYh"/>
+                                <exclude reference="weB-9h-6lx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -143,15 +145,15 @@
                                 <include reference="BF9-NO-YEy"/>
                                 <include reference="KQB-O3-IvF"/>
                                 <include reference="vC9-hY-QOq"/>
-                                <include reference="Cyy-aP-6ON"/>
-                                <include reference="Nd9-hG-4QB"/>
-                                <exclude reference="qM0-J7-NYh"/>
-                                <include reference="wbr-rj-F3T"/>
                                 <include reference="GYZ-fw-Sut"/>
                                 <include reference="Jg9-3N-eIc"/>
                                 <include reference="nhG-K0-mFQ"/>
+                                <include reference="wbr-rj-F3T"/>
                                 <include reference="BAa-mu-h29"/>
                                 <include reference="DRg-nC-Uwv"/>
+                                <include reference="Cyy-aP-6ON"/>
+                                <include reference="Nd9-hG-4QB"/>
+                                <exclude reference="qM0-J7-NYh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -160,14 +162,14 @@
                                 <include reference="9fO-qK-PQR"/>
                                 <include reference="dw8-hC-k3h"/>
                                 <include reference="gUw-qI-CZw"/>
-                                <include reference="ZU0-aV-nep"/>
-                                <include reference="weB-9h-6lx"/>
-                                <include reference="WFT-M6-8aj"/>
                                 <include reference="6zA-D3-85i"/>
                                 <include reference="ab2-Cn-xrW"/>
                                 <include reference="g0e-gj-Ixl"/>
+                                <include reference="WFT-M6-8aj"/>
                                 <include reference="5hh-Bc-qgb"/>
                                 <include reference="w73-AM-2yy"/>
+                                <include reference="ZU0-aV-nep"/>
+                                <include reference="weB-9h-6lx"/>
                             </mask>
                         </variation>
                     </view>
@@ -184,5 +186,8 @@
     </scenes>
     <resources>
         <image name="day" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

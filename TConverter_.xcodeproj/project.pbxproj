@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E50C062B24D9E5D6001C56DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C062A24D9E5D6001C56DF /* AppDelegate.swift */; };
 		E50C062D24D9E5D6001C56DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C062C24D9E5D6001C56DF /* SceneDelegate.swift */; };
-		E50C062F24D9E5D6001C56DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C062E24D9E5D6001C56DF /* ViewController.swift */; };
+		E50C062F24D9E5D6001C56DF /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C062E24D9E5D6001C56DF /* ConverterViewController.swift */; };
 		E50C063224D9E5D6001C56DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50C063024D9E5D6001C56DF /* Main.storyboard */; };
 		E50C063424D9E5D7001C56DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50C063324D9E5D7001C56DF /* Assets.xcassets */; };
 		E50C063724D9E5D7001C56DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50C063524D9E5D7001C56DF /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		E50C062724D9E5D6001C56DF /* TConverter_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TConverter_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50C062A24D9E5D6001C56DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E50C062C24D9E5D6001C56DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E50C062E24D9E5D6001C56DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E50C062E24D9E5D6001C56DF /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		E50C063124D9E5D6001C56DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E50C063324D9E5D7001C56DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E50C063624D9E5D7001C56DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		E50C062924D9E5D6001C56DF /* TConverter_ */ = {
 			isa = PBXGroup;
 			children = (
-				E50C062A24D9E5D6001C56DF /* AppDelegate.swift */,
-				E50C062C24D9E5D6001C56DF /* SceneDelegate.swift */,
-				E50C062E24D9E5D6001C56DF /* ViewController.swift */,
-				E50C063024D9E5D6001C56DF /* Main.storyboard */,
-				E50C063324D9E5D7001C56DF /* Assets.xcassets */,
-				E50C063524D9E5D7001C56DF /* LaunchScreen.storyboard */,
-				E50C063824D9E5D7001C56DF /* Info.plist */,
+				E5846E37264C6A1C00292A0C /* Supporting files */,
+				E5846E39264C6A2C00292A0C /* View Controllers */,
+				E5846E3B264C6A3B00292A0C /* Storyboards */,
+				E5846E36264C6A0A00292A0C /* Sources */,
 			);
 			path = TConverter_;
+			sourceTree = "<group>";
+		};
+		E5846E36264C6A0A00292A0C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E50C063324D9E5D7001C56DF /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E5846E37264C6A1C00292A0C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E50C062A24D9E5D6001C56DF /* AppDelegate.swift */,
+				E50C062C24D9E5D6001C56DF /* SceneDelegate.swift */,
+				E50C063824D9E5D7001C56DF /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		E5846E39264C6A2C00292A0C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E50C062E24D9E5D6001C56DF /* ConverterViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E5846E3B264C6A3B00292A0C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E50C063024D9E5D6001C56DF /* Main.storyboard */,
+				E50C063524D9E5D7001C56DF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +126,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Nikita Kochetov";
 				TargetAttributes = {
 					E50C062624D9E5D6001C56DF = {
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E50C062F24D9E5D6001C56DF /* ViewController.swift in Sources */,
+				E50C062F24D9E5D6001C56DF /* ConverterViewController.swift in Sources */,
 				E50C062B24D9E5D6001C56DF /* AppDelegate.swift in Sources */,
 				E50C062D24D9E5D6001C56DF /* SceneDelegate.swift in Sources */,
 			);
@@ -192,6 +224,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,6 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TConverter_/Supporting files";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -252,6 +286,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,6 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "TConverter_/Supporting files";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZZW6YBBKN;
-				INFOPLIST_FILE = TConverter_/Info.plist;
+				INFOPLIST_FILE = "TConverter_/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZZW6YBBKN;
-				INFOPLIST_FILE = TConverter_/Info.plist;
+				INFOPLIST_FILE = "TConverter_/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
