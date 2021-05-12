@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConverterViewController: UIViewController {
 
     @IBOutlet weak var celsiusLabel: UILabel!
     @IBOutlet weak var fahrenheitLabel: UILabel!
