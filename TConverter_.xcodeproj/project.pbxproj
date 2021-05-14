@@ -15,6 +15,7 @@
 		E50C063724D9E5D7001C56DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50C063524D9E5D7001C56DF /* LaunchScreen.storyboard */; };
 		E599816E264E508B001447F7 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = E599816C264E508B001447F7 /* Screenshot02.png */; };
 		E599816F264E508B001447F7 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = E599816D264E508B001447F7 /* Screenshot01.png */; };
+		E5998172264E52B2001447F7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5998171264E52B2001447F7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E50C063824D9E5D7001C56DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E599816C264E508B001447F7 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
 		E599816D264E508B001447F7 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
+		E5998171264E52B2001447F7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				E5846E37264C6A1C00292A0C /* Supporting files */,
 				E5846E3B264C6A3B00292A0C /* Storyboards */,
 				E5846E36264C6A0A00292A0C /* Sources */,
+				E5998171264E52B2001447F7 /* README.md */,
 			);
 			path = TConverter_;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5998172264E52B2001447F7 /* README.md in Resources */,
 				E50C063724D9E5D7001C56DF /* LaunchScreen.storyboard in Resources */,
 				E50C063424D9E5D7001C56DF /* Assets.xcassets in Resources */,
 				E50C063224D9E5D6001C56DF /* Main.storyboard in Resources */,
