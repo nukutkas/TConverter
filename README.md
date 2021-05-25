@@ -1,6 +1,6 @@
 # TConverter
 
-Simple converter from celsius to fahrenheit for testing display orientations and UISlider.
+Simple converter from celsius to fahrenheit for practice display orientations and UISlider.
 
 # Installation
 
